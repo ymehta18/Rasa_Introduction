@@ -1,0 +1,75 @@
+2019-08-05 11:47:32,790 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 11:48:04,699 [INFO ]  Killing Sanic server now.
+2019-08-05 11:48:34,810 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 11:49:02,619 [INFO ]  Killing Sanic server now.
+2019-08-05 11:50:13,008 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 11:50:43,335 [INFO ]  Killing Sanic server now.
+2019-08-05 11:56:08,237 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 11:57:08,733 [INFO ]  Killing Sanic server now.
+2019-08-05 11:57:36,101 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 11:59:50,409 [INFO ]  Killing Sanic server now.
+2019-08-05 12:06:29,480 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:06:45,310 [INFO ]  Killing Sanic server now.
+2019-08-05 12:14:46,682 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:15:11,270 [INFO ]  Killing Sanic server now.
+2019-08-05 12:16:48,352 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:17:29,244 [INFO ]  Killing Sanic server now.
+2019-08-05 12:18:06,008 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:20:11,111 [INFO ]  Killing Sanic server now.
+2019-08-05 12:29:25,300 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:31:07,223 [INFO ]  Killing Sanic server now.
+2019-08-05 12:32:04,504 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:32:25,735 [INFO ]  Killing Sanic server now.
+2019-08-05 12:34:20,473 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:35:41,525 [INFO ]  Killing Sanic server now.
+2019-08-05 12:37:45,193 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 12:38:24,634 [INFO ]  Killing Sanic server now.
+2019-08-05 12:38:39,678 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 14:25:57,946 [INFO ]  Killing Sanic server now.
+2019-08-05 14:37:38,438 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 14:39:12,279 [INFO ]  Killing Sanic server now.
+2019-08-05 14:41:07,573 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 14:42:46,436 [INFO ]  Killing Sanic server now.
+2019-08-05 14:43:04,577 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 14:46:04,757 [INFO ]  Killing Sanic server now.
+2019-08-05 15:07:12,028 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:08:18,490 [INFO ]  Killing Sanic server now.
+2019-08-05 15:08:57,298 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:09:12,318 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:13:35,121 [INFO ]  Killing Sanic server now.
+2019-08-05 15:32:12,409 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:32:31,397 [ERROR]  The model predicted the custom action 'actions.action_weather', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-05 15:32:31,400 [ERROR]  Encountered an exception while running action 'actions.action_weather'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-05 15:34:54,138 [INFO ]  Killing Sanic server now.
+2019-08-05 15:35:02,640 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:35:30,259 [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<configure_app.<locals>.run_cmdline_io() done, defined at /home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/rasa/core/run.py:115> exception=TimeoutError()>
+Traceback (most recent call last):
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/rasa/core/run.py", line 119, in run_cmdline_io
+    server_url=constants.DEFAULT_SERVER_FORMAT.format(port)
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/rasa/core/channels/console.py", line 137, in record_messages
+    async for response in bot_responses:
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/async_generator/_impl.py", line 366, in step
+    return await ANextIter(self._it, start_fn, *args)
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/async_generator/_impl.py", line 205, in throw
+    return self._invoke(self._it.throw, type, value, traceback)
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/async_generator/_impl.py", line 209, in _invoke
+    result = fn(*args)
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/rasa/core/channels/console.py", line 102, in send_message_receive_stream
+    async for line in resp.content:
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/aiohttp/streams.py", line 40, in __anext__
+    rv = await self.read_func()
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/aiohttp/streams.py", line 329, in readline
+    await self._wait('readline')
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/aiohttp/streams.py", line 297, in _wait
+    await waiter
+  File "/home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/aiohttp/helpers.py", line 585, in __exit__
+    raise asyncio.TimeoutError from None
+concurrent.futures._base.TimeoutError
+2019-08-05 15:35:30,262 [ERROR]  Transport closed @ ('127.0.0.1', 46804) and exception experienced during error handling
+2019-08-05 15:36:30,988 [ERROR]  Task was destroyed but it is pending!
+task: <Task pending coro=<RestInput.on_message_wrapper() running at /home/yashasvi/Documents/env/my_env/lib/python3.6/site-packages/rasa/core/channels/channel.py:387> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x7f7298335288>()]>>
+2019-08-05 15:39:41,235 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 15:39:45,913 [INFO ]  Killing Sanic server now.
+2019-08-05 15:40:21,168 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 16:03:13,099 [INFO ]  Killing Sanic server now.

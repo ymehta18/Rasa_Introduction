@@ -1,0 +1,74 @@
+slots:
+  name:
+    type: text
+  location:
+    type: text
+
+
+entities:
+ - location
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - inform
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_ask
+- utter_tell
+- utter_time
+- action_default_fallback
+- actions.action_weather
+- utter_location
+
+
+templates:
+  utter_greet:
+  - "Hey!"
+  - "Hello there!!"
+  - "Hi there!!"
+ 
+  utter_ask:
+  - "What is your name?"
+  - "What people call you?"
+  - "What can I call you?"
+  - "Please tell me your good name."
+
+  utter_tell:
+  - "Nice to meet you {name}"
+  - "Pleased to meet you {name}"
+  - "How are you {name}?"
+
+  utter_time:
+  - "It is time to work!"
+  - "It's time to shine!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - "Did that help you?"
+  - "Was that helpful?"
+
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - "Bye :)"
+  - "Have a nice day, Bye :)"
+  - "Talk to you later"
+
+  action_default_fallback:
+  - "I did not get what you said."
+  - "I am afraid. I didn't understand."
+  
